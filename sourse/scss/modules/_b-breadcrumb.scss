@@ -1,0 +1,22 @@
+.b-breadcrumb{
+    padding: em(17) 0 0 em(9);
+    &__item{
+        color: #ffffff;
+        $font-size: 14;
+        font-size: em($font-size);
+        display: inline-block;
+        &:before{
+            content:"→";
+            display: inline-block;
+            padding: em(0) em(5, $font-size);
+        }
+        &:first-child{
+            &:before{
+                display: none;
+            }
+        }
+    }
+    &__link{
+        color: #b5c1cb;
+    }
+}

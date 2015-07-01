@@ -1,0 +1,61 @@
+.b-vidprev{
+    padding: em(28) em(10);
+    border:1px solid #ededed;
+    margin-bottom: em(6);
+    overflow: hidden;
+    &__title{
+        $font-size: 13;
+        font-size: em($font-size);
+        font-weight: 300;
+        a{
+            color: #db0000;
+        }
+    }
+    &__time{
+        $font-size: 13;
+        font-size: em($font-size);
+        font-weight: 300;
+    }
+    &__text{
+        color: #156bbb;
+        $font-size: 13;
+        font-size: em($font-size);
+        font-weight: 300;
+        padding-top: em(20, $font-size);
+    }
+    &__play{
+        cursor: pointer;
+        display: block;
+        box-sizing: border-box;
+        padding-bottom: 29%;
+        position: relative;
+        width: 39%;
+        margin-right: em(33);
+        float: left;
+        border-right:1px solid #ededed;
+        &:before, &:after{
+            content:"";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        &:before{
+            width: em(60);
+            height: em(60);
+            margin: em(-30) 0 0 em(-30);
+            border-radius:50%;
+            background-color: #999999;
+        }
+        &:after{
+            border-left: em(20) solid #fff;
+            border-top: em(12) solid transparent;
+            border-bottom: em(12) solid transparent;
+            z-index: 10;
+            margin: em(-12) 0 0 em(-8);
+        }
+    }
+    &__mcontent{
+        overflow: hidden;
+    }
+}

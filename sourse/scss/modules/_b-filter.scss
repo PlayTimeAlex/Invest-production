@@ -1,0 +1,73 @@
+.b-filter{
+    padding: 0 0 em(45);
+    background: url(../images/b64/shadow.png) no-repeat center bottom;
+    &__item{
+        padding: 0 0 0 em(50);
+        background: url(../images/b64/list.png) no-repeat left center;
+        p{
+            $font-size: 13;
+            font-size: em($font-size);
+            font-weight: 300;
+        }
+        a{
+            color: #ec0000;
+        }
+        &_clock{
+            background-image: url(../images/b64/clock.png);
+        }
+        &_box{
+            background-image: url(../images/b64/box.png);
+        }
+    }
+    &__list{
+        padding: em(8) 0 0;
+        position: relative;
+        ul{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            padding: em(10);
+            background-color: #fff;
+            z-index: 10;
+        }
+        li{
+            $font-size: 13;
+            font-size: em($font-size);
+            list-style:none;
+            padding: em(5, $font-size) 0;
+        }
+        &:hover ul{
+            display: block;
+        }
+    }
+    &__list-header{
+        $font-size: 13;
+        font-size: em($font-size);
+        display: inline-block;
+        padding: 0 em(17, $font-size) 0 0;
+        position: relative;
+        &:after{
+            content:"";
+            display: block;
+            border-top:5px solid #ec0000;
+            border-left:3px solid transparent;
+            border-right:3px solid transparent;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -1px;
+        }
+    }
+}
+
+@media (max-width: $base__size_sm - 1 * 1px) {
+    .b-filter{
+        padding: 0 0 em(45);
+        background: url(../images/b64/shadow.png) no-repeat center bottom;
+        &__item{
+            padding: 0 0 em(20) em(50);
+        }
+    }
+}

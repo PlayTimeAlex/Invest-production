@@ -1,0 +1,30 @@
+.b-news{
+    &__title{
+        $font-size: 19;
+        font-size: em($font-size);
+        color: rgba(6, 127, 222, 0.988);
+        font-weight: 700;
+    }
+    &__time{
+        display: block;
+        $font-size: 13;
+        font-size: em($font-size);
+        padding: em(8, $font-size) 0 em(8, $font-size) em(22, $font-size);
+        background: url(../images/b64/time.png) no-repeat left center;
+        position: relative;
+        margin-bottom: em(20, $font-size);
+        &:after{
+            content:"";
+            display: block;
+            position: absolute;
+            bottom: em(-5, $font-size);
+            left: 0;
+            width: em(25, $font-size);
+            height: em(3, $font-size);
+            background-color: #e5e5e5;
+        }
+    }
+    &__bottom{
+        padding-top: em(30);
+    }
+}

@@ -1,0 +1,74 @@
+.pr{
+    &-button{
+        font-family: $base__font;
+        display: inline-block;
+        text-decoration: none;
+        $color: #e40510;
+        color: $color;
+        $font-size: 13;
+        font-size: rem($font-size);
+        font-weight: 300;
+        border: 2px solid #e40510;
+        border-radius: rem(17);
+        padding: rem(7) rem(33);
+        transition:background-color .3s, color .3s;
+        background-color: transparent;
+        cursor: pointer;
+        line-height: 1.5;
+        box-sizing: border-box;
+        &:hover{
+            background-color: $color;
+            color: #fff;
+        }
+        &_block{
+            display: block;
+            width: 100%;
+        }
+        &_white{
+            color: #fff;
+        }
+    }
+
+
+    &-list{
+        padding: em(10) 0;
+        $font-size: 14;
+        li{
+            color: #B4B4B4;
+            font-size: rem($font-size);
+            padding: em(9, $font-size) 0 em(9, $font-size) em(47, $font-size);
+            list-style: none;
+            background-repeat:no-repeat;
+            background-position: 0 em(10, $font-size);
+        }
+        &.checklist li{
+            background-image: url(../images/b64/checklist.png);
+        }
+        &.alertlist li{
+            background-position: 0 em(6, $font-size);
+            background-image: url(../images/b64/alertlist.png);
+        }
+    }
+
+    &-breakepoint{
+        width: 100%;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    &-preloader{
+        text-align: center;
+        display: none;
+        padding: em(20) 0;
+    }
+    
+    &-sponsor{
+        padding-bottom: em(15);
+        h4{
+            $font-size: 20;
+            font-size: em($font-size);
+            font-weight: 700;
+            margin: em(10) 0 em(5);
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.b-conference{
+    border-bottom:1px solid #ededed;
+    padding:em(29) 0;
+    &__image-wrap{
+        padding-right: em(30);
+    }
+    &__image{
+        width: 100%;
+    }
+    &__readmore{
+        $font-size: 13;
+        font-size: em($font-size);
+        color: #df0000;
+        display: block;
+        margin-top: em(20, $font-size);
+        &:after{
+            content:url(../images/b64/arrow-right.png);
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: em(17, $font-size);
+        }
+    }
+}
+
+@media (max-width: $base__size_sm - 1 * 1px) {
+    .b-conference{
+        &__image-wrap{
+            padding-right: 0;
+        }
+    }
+}

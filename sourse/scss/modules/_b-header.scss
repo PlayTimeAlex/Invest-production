@@ -1,0 +1,120 @@
+.b-header{
+    background: #434b51;
+    background-position: center center;
+    background-size: cover;
+    &__title{
+        text-align: center;
+        font-weight: 700;
+        $font-size: 43;
+        font-size: em($font-size);
+        color: #fff;
+        padding-bottom: em(7, $font-size);
+    }
+    &__subtitle{
+        $font-size: 13;
+        font-size: em($font-size);
+        text-align: center;
+        font-weight: 300;
+        color: #fff;
+    }
+    &__promo{
+        padding: em(100) 0; 
+    }
+    &__top-container{
+        overflow: hidden;
+    }
+    &__top{
+        position: relative;
+        height: em(65);
+        &:before, &:after{
+            content:"";
+            display: block;
+            height: 100%;
+            width: em(2000);
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: #fff;
+        }
+        &:after{
+            left: auto;
+            right: 100%;
+        }
+        &_white{
+            background-color: #fff;
+        }
+    }
+    &__logo{
+        display: block;
+        width: em(140);
+        height: 100%;
+        background: url(../images/content/logo.png) no-repeat center center;
+        background-size: contain;
+        margin: 0 em(20);
+        float: left;
+        &_black{
+            background-image: url(../images/content/logo_black.png);
+            background-color: #fff;
+        }
+    }
+    &__login{
+        float: right;
+        padding: 0 em(15);
+        background-color: #fdc706;
+        a{
+            $font-size: 11;
+            font-size: em($font-size);
+            text-transform: uppercase;
+            display: inline-block;
+            font-weight: 500;
+            padding: em(20, $font-size) em(8, $font-size);
+        }
+    }
+    &__brow{
+        border-bottom:1px solid rgba(255,255,255,.2);
+    }
+    &__mright{
+        display: none;
+    }
+}
+
+@media (max-width: $base__size_sm - 1 * 1px) {
+    .b-header{
+        &__login{
+            float: none;
+            text-align: center;
+            overflow: hidden;
+            a{
+                display: block;
+                width: 50%;
+                float: left;
+            }
+        }
+    }
+}
+@media (max-width: $base__size_md - 1 * 1px) {
+    .b-header{
+        &__mright{
+            display: block;
+            background-color: #ffffff;
+            overflow: hidden;
+            height: 100%;
+            position: relative;
+        }
+        &__mobtn{
+            display: block;
+            border:0;
+            font-size: $base__font-size*1px;
+            background: url(../images/b64/menu_mob.svg) no-repeat 50% 50%;
+            width: em(65);
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+        }
+        &__brow{
+            border-bottom:0;
+        }
+    }
+}

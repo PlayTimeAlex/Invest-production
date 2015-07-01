@@ -1,0 +1,16 @@
+.b-onas{
+    padding: 0 0 em(20);
+    &__ribbon{
+        background-repeat: repeat-x;
+        background-size: auto 100%;
+        width: 100%;
+        margin: em(40) 0;
+    }
+    &__check{
+        $font-size: 14;
+        font-size: em($font-size);
+        font-weight: 300;
+        background: url(../images/b64/onas_check.png) no-repeat left center;
+        padding: em(18, $font-size) 0 em(18, $font-size) em(54, $font-size);
+    }
+}

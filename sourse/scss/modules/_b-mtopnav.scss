@@ -1,0 +1,21 @@
+.b-mtopnav{
+    display: none;
+    background-color: #fff;
+    &__link{
+        text-align: center;
+        $font-size: 14;
+        font-size: em($font-size);
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        padding: em(8, $font-size) em(5, $font-size);
+        font-weight: 500;
+        display: block;
+        &:hover, &:active{
+            text-decoration: underline;
+        }
+    }
+    &__item{
+        list-style:none;
+    }
+}

@@ -1,0 +1,32 @@
+.b-topnav{
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+    &__link{
+        $font-size: 11;
+        font-size: em($font-size);
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        padding: em(5, $font-size) em(5, $font-size);
+        font-weight: 500;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    table{
+        width: 100%;
+        margin-top: em(20);
+    }
+    td{
+        vertical-align: middle;
+        border-right:1px solid #f0f0f0;
+        &:first-child{
+            padding-left: em(10);
+        }
+        &:last-child{
+            border-right:0;
+        }
+    }
+}
