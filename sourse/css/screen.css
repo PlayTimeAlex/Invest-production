@@ -762,16 +762,48 @@ strong {
 .b-paging {
   padding: 5.4em 0 0; }
 
+body {
+  position: relative; }
+
 .align-right {
   text-align: right; }
 
 .b-page__content {
   padding: 4.7em 0 5.6em; }
 
+.b-form__el {
+  padding-bottom: 1.5em; }
+.b-form__submit {
+  font-size: 1.3em;
+  line-height: 1.5;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 700;
+  background-color: #ff6144;
+  border: 0;
+  width: 100%;
+  color: #ffffff;
+  padding: 0.76923em;
+  cursor: pointer;
+  transition: background-color .3s; }
+  .b-form__submit:hover {
+    background-color: #ff3611; }
+.b-form__text {
+  font-size: 1.3em;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  color: #333333;
+  padding: 0 1.23077em;
+  height: 2.92308em; }
+
 .b-header {
   background: #434b51;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative;
+  z-index: 10; }
   .b-header__title {
     text-align: center;
     font-weight: 700;
@@ -829,6 +861,36 @@ strong {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
   .b-header__mright {
     display: none; }
+  .b-header_map {
+    background-color: #ff6144;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+  .b-header__promo-label {
+    text-align: center; }
+    .b-header__promo-label span {
+      display: inline-block;
+      background-color: #ffc805;
+      font-size: 1.3em;
+      font-weight: 700;
+      padding: 0.23077em 1.30769em 0.30769em;
+      position: relative; }
+      .b-header__promo-label span:after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-right: 14px solid transparent;
+        border-top: 13px solid #ffc805;
+        border-bottom: 13px solid #ffc805;
+        left: 100%;
+        top: 0; }
+      .b-header__promo-label span:before {
+        content: "";
+        display: block;
+        position: absolute;
+        border-left: 14px solid transparent;
+        border-top: 13px solid #ffc805;
+        border-bottom: 13px solid #ffc805;
+        right: 100%;
+        top: 0; }
 
 @media (max-width: 767px) {
   .b-header__login {
@@ -1328,3 +1390,100 @@ html[xmlns] .flexslider .slides {
     font-weight: 300;
     background: url(../images/b64/onas_check.png) no-repeat left center;
     padding: 1.28571em 0 1.28571em 3.85714em; }
+
+.b-map {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+  z-index: -1;
+  min-height: 100%; }
+
+.b-contacts {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .b-contacts__container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 10em; }
+  .b-contacts__place {
+    padding: 3.4em 2.6em;
+    background-color: #fff;
+    position: absolute;
+    bottom: 8.3em;
+    right: 0;
+    box-sizing: border-box;
+    max-width: 41.6em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5); }
+    .b-contacts__place h2 {
+      font-size: 1.7em;
+      font-weight: 700;
+      padding-bottom: 0.58824em; }
+    .b-contacts__place p {
+      font-size: 1.4em; }
+  .b-contacts__form {
+    padding: 2em 2.7em;
+    background-color: #fff;
+    width: 26em;
+    position: absolute;
+    left: 0;
+    top: 27em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    box-sizing: border-box; }
+    .b-contacts__form h2 {
+      font-size: 2.3em;
+      font-weight: 700;
+      padding-bottom: 0.21739em;
+      position: relative;
+      margin-bottom: 0.69565em; }
+      .b-contacts__form h2:after {
+        content: "";
+        display: block;
+        height: 3px;
+        background-color: #ff6144;
+        position: absolute;
+        width: 39px;
+        left: 0;
+        bottom: 0; }
+    .b-contacts__form p {
+      font-size: 1.4em;
+      padding-bottom: 2.14286em; }
+
+@media (max-height: 700px) {
+  .b-contacts__form {
+    top: 10em; } }
+
+@media (max-height: 700px) {
+  .b-contacts {
+    position: relative; }
+    .b-contacts__place {
+      position: static; }
+    .b-contacts__form {
+      position: static; } }
+
+@media (max-width: 767px) {
+  .b-contacts {
+    position: relative;
+    height: auto;
+    min-height: 0; }
+    .b-contacts__container {
+      padding-top: 1em;
+      padding-bottom: 2em;
+      height: auto;
+      min-height: 0; }
+    .b-contacts__place {
+      position: static;
+      width: 90%;
+      max-width: 90%;
+      margin: 0 auto; }
+    .b-contacts__form {
+      position: static;
+      width: 90%;
+      margin: 0 auto 4em; } }

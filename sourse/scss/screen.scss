@@ -7,11 +7,14 @@
 @import "modules/pr";
 @import "modules/b-text";
 @import "modules/b-paging";
-
+body{
+    position: relative;
+}
 .align-right{
     text-align: right;
 }
 @import "modules/b-page";
+@import "modules/b-form";
 @import "modules/b-header";
 @import "modules/b-footer";
 @import "modules/b-carusel";
@@ -30,3 +33,5 @@
 @import "modules/b-vtestimonial";
 @import "modules/b-vidprev";
 @import "modules/b-onas";
+@import "modules/b-map";
+@import "modules/b-contacts";

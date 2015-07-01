@@ -1,0 +1,34 @@
+.b-form{
+    &__el{
+        padding-bottom: em(15);
+    }
+    &__submit{
+        $font-size: 13;
+        font-size: em($font-size);
+        line-height: 1.5;
+        box-sizing: border-box;
+        text-align: center;
+        font-weight: 700;
+        background-color: #ff6144;
+        border: 0;
+        width: 100%;
+        color: #ffffff;
+        padding: em(10, $font-size);
+        cursor: pointer;
+        transition:background-color .3s;
+        &:hover{
+            background-color: darken(#ff6144, 10);
+        }
+    }
+    &__text{
+        $font-size: 13;
+        font-size: em($font-size);
+        box-sizing: border-box;
+        width: 100%;
+        border:1px solid #d9d9d9;
+        background-color: #fff;
+        color: #333333;
+        padding: 0 em(16, $font-size);
+        height: em(38, $font-size);
+    }
+}

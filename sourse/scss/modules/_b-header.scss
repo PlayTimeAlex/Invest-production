@@ -2,6 +2,8 @@
     background: #434b51;
     background-position: center center;
     background-size: cover;
+    position: relative;
+    z-index: 10;
     &__title{
         text-align: center;
         font-weight: 700;
@@ -75,6 +77,42 @@
     }
     &__mright{
         display: none;
+    }
+    &_map{
+        background-color: #ff6144;
+        box-shadow: 0 0 20px rgba(0,0,0,.3);
+    }
+    &__promo-label{
+        text-align: center;
+        span{
+            display: inline-block;
+            background-color: #ffc805;
+            $font-size: 13;
+            font-size: em($font-size);
+            font-weight: 700;
+            padding: em(3, $font-size) em(17, $font-size) em(4, $font-size);
+            position: relative;
+            &:after{
+                content:"";
+                display: block;
+                position: absolute;
+                border-right:14px solid transparent;
+                border-top:13px solid #ffc805;
+                border-bottom:13px solid #ffc805;
+                left: 100%;
+                top: 0;
+            }
+            &:before{
+                content:"";
+                display: block;
+                position: absolute;
+                border-left:14px solid transparent;
+                border-top:13px solid #ffc805;
+                border-bottom:13px solid #ffc805;
+                right: 100%;
+                top: 0;
+            }
+        }
     }
 }
 

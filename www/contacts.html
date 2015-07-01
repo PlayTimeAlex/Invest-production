@@ -1,10 +1,134 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+    <head>
+        <title>Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="css/style.min.css" media="all"/>
+        <!--[if IE 9]>
+            <link rel="stylesheet" href="css/ie9.css" media="all"/>
+        <![endif]-->
+        <script src="js/01_jquery-2.0.3.min.js"></script>
+        <script src="js/all.min.js"></script>
+        <!--[if lte IE 8 ]><script type="text/javascript">window.location.href="ie8min/index.html";</script><![endif]-->
+    </head>
+    <body class="b-page">
 
-</body>
+<script src="http://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
+<script type="text/javascript">
+    ymaps.ready(init);
+    var myMap,
+        myPlacemark;
+
+    function init(){
+        myMap = new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 7
+        });
+
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+            hintContent: 'Moscow!',
+            balloonContent: 'Capital of Russia'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
+<div class="b-map" id="map"></div>
+<header class="b-header b-header_map">
+    <div class="b-header__top-container">
+        <div class="container">
+            <div class="b-header__top">
+                <a href="#" class="b-header__logo"></a>
+                <nav class="b-topnav hidden-sm hidden-xs">
+                    <table>
+                        <tr>
+                            <td>
+                                <a class="b-topnav__link" href="#">О нас</a>
+                            </td>
+                            <td>
+                                <a class="b-topnav__link" href="#">Экономические программы</a>
+                            </td>
+                            <td>
+                                <a class="b-topnav__link" href="#">Законодательная справка</a>
+                            </td>
+                            <td>
+                                <a class="b-topnav__link" href="#">Отзывы</a>
+                            </td>
+                            <td>
+                                <a class="b-topnav__link" href="#">Конференции</a>
+                            </td>
+                            <td>
+                                <a class="b-topnav__link" href="#">Новости</a>
+                            </td>
+                            <td>
+                                <a class="b-topnav__link" href="#">Контакты</a>
+                            </td>
+                        </tr>
+                    </table>
+                </nav>
+                <div class="b-header__mright">
+                    <button class="b-header__mobtn js-openmenu"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="b-mtopnav hidden-md hidden-lg">
+        <li class="b-mtopnav__item"><a class="b-mtopnav__link" href="#">О нас</a></li>
+        <li class="b-mtopnav__item"><a class="b-mtopnav__link" href="#">Экономические программы</a></li>
+        <li class="b-mtopnav__item"><a class="b-mtopnav__link" href="#">Законодательная справка</a></li>
+        <li class="b-mtopnav__item"><a class="b-mtopnav__link" href="#">Отзывы</a></li>
+        <li class="b-mtopnav__item"><a class="b-mtopnav__link" href="#">Конференции</a></li>
+        <li class="b-mtopnav__item"><a class="b-mtopnav__link" href="#">Новости</a></li>
+        <li class="b-mtopnav__item"><a class="b-mtopnav__link" href="#">Контакты</a></li>
+    </ul>
+    <div class="b-header__login visible-xs">
+        <a href="#">Войти</a>
+        <a href="#">зарегистрироватся</a>
+    </div>
+</header>
+<div class="b-contacts">
+    <div class="container">
+        <div class="b-contacts__container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6" style="position: static;">
+                    <div class="b-contacts__form">
+                        <h2>Есть вопросы?</h2>
+                        <p>Напишите нам и мы свяжемся в течений 8 рабочих часов</p>
+
+                        <form class="b-form" action="/">
+                            <div class="b-form__el">
+                                <input class="b-form__text" type="text" placeholder="Имя"/>
+                            </div>
+                            <div class="b-form__el">
+                                <input class="b-form__text" type="email" placeholder="E-mail"/>
+                            </div>
+                            <div class="b-form__el">
+                                <input class="b-form__text" type="tel" placeholder="Телефон"/>
+                            </div>
+                            <div class="b-form__el">
+                                <button type="submit" class="b-form__submit">Заказать звонок</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6" style="position: static;">
+                    <div class="b-contacts__place">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h2>+7 (495) 961-54-87</h2>
+                            </div>
+                            <div class="col-xs-6">
+                                <h2>+7 (495) 961-54-86</h2>
+                            </div>
+                        </div>
+                        <p>ОАО «Биг Три Продакшн»<br />г.Москва, Лубянский проезд д.5, офис 205.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
 </html>

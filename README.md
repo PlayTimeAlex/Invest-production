@@ -5,7 +5,7 @@ http://p145.createme.tk/archconference.html
 
 http://p145.createme.tk/conference.html
 
-http://p145.createme.tk/contacts.html (в разработке)
+http://p145.createme.tk/contacts.html
 
 http://p145.createme.tk/ekonom_program.html
 

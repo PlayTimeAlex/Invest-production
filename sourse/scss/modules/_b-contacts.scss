@@ -1,0 +1,112 @@
+.b-contacts{
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &__container{
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: em(100);
+    }
+    &__place{
+        padding: em(34) em(26);
+        background-color: #fff;
+        position: absolute;
+        bottom: em(83);
+        right: 0;
+        box-sizing: border-box;
+        max-width: em(416);
+        box-shadow: 0 0 em(10) rgba(0,0,0,.5);
+        h2{
+            $font-size: 17;
+            font-size: em($font-size);
+            font-weight: 700;
+            padding-bottom: em(10, $font-size);
+        }
+        p{
+            $font-size: 14;
+            font-size: em($font-size);
+        }
+    }
+    &__form{
+        padding: em(20) em(27);
+        background-color: #fff;
+        width: em(260);
+        position: absolute;
+        left: 0;
+        top: em(270);
+        box-shadow: 0 0 em(10) rgba(0,0,0,.5);
+        box-sizing: border-box;
+        h2{
+            $font-size: 23;
+            font-size: em($font-size);
+            font-weight: 700;
+            padding-bottom: em(5, $font-size);
+            position: relative;
+            margin-bottom: em(16, $font-size);
+            &:after{
+                content:"";
+                display: block;
+                height: 3px;
+                background-color: #ff6144;
+                position: absolute;
+                width: 39px;
+                left:0;
+                bottom: 0;
+            }
+        }
+        p{
+            $font-size: 14;
+            font-size: em($font-size);
+            padding-bottom: em(30, $font-size);
+        }
+    }
+}
+
+@media (max-height: 700px) {
+    .b-contacts{
+        &__form{
+            top: em(100);
+        }
+    }
+}
+
+@media (max-height: 700px) {
+    .b-contacts{
+        position: relative;
+        &__place{
+            position: static;
+        }
+        &__form{
+            position: static;
+        }
+    }
+}
+@media (max-width: $base__size_sm - 1 * 1px) {
+    .b-contacts{
+        position: relative;
+        height: auto;
+        min-height: 0;
+        &__container{
+            padding-top: em(10);
+            padding-bottom: em(20);
+            height: auto;
+            min-height: 0;
+        }
+
+        &__place{
+            position: static;
+            width: 90%;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        &__form{
+            position: static;
+            width: 90%;
+            margin: 0 auto em(40);
+        }
+    }
+}
