@@ -1,0 +1,20 @@
+.b-add-review{
+    padding: em(20) 0 0;
+    &__button{
+        display: inline-block;
+        $font-size: 13;
+        font-size: em($font-size);
+        text-decoration: none;
+        padding: em(12, $font-size) em(47, $font-size);
+        background-color: #ff6144;
+        border-radius: 5px;
+        font-weight: 700;
+        color: #fff;
+    }
+    &__note{
+        $font-size: 11;
+        font-size: em($font-size);
+        color: #c1b0b4;
+        padding: em(20, $font-size) 0;
+    }
+}

@@ -44,6 +44,15 @@
             $(this).css('display', 'none');
             return false;
         });
+
+        $('.b-header__video').on('click', function(){
+            if($(this).hasClass('b-header__video_playing'))
+                return false;
+            $(this).addClass('b-header__video_playing');
+            $(this).html(mainVideo);
+            return false;
+        });
+
     });
 
     $(window).load(function() {

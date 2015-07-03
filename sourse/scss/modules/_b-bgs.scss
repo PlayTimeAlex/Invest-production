@@ -1,0 +1,135 @@
+.b-bgs{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding: em(63) 0;
+    position: relative;
+    overflow: hidden;
+    &__title{
+        text-align: center;
+        font-weight: 700;
+        color: #fff;
+        $font-size: 43;
+        font-size: em($font-size);
+        line-height: 1.1;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        padding-bottom: em(120, $font-size);
+    }
+    &__label{
+        text-align: center;
+        padding-bottom: em(15);
+        span{
+            display: inline-block;
+            background-color: #ffc805;
+            $font-size: 13;
+            font-size: em($font-size);
+            font-weight: 700;
+            padding: em(3, $font-size) em(17, $font-size) em(4, $font-size);
+            position: relative;
+            &:after{
+                content:"";
+                display: block;
+                position: absolute;
+                border-right:14px solid transparent;
+                border-top:13px solid #ffc805;
+                border-bottom:13px solid #ffc805;
+                left: 100%;
+                top: 0;
+            }
+            &:before{
+                content:"";
+                display: block;
+                position: absolute;
+                border-left:14px solid transparent;
+                border-top:13px solid #ffc805;
+                border-bottom:13px solid #ffc805;
+                right: 100%;
+                top: 0;
+            }
+        }
+    }
+    &_bottom-line{
+        padding-bottom: em(115);
+        &:after{
+            content:"";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-left: 100vw solid #fff;
+            border-top: em(75) solid transparent;
+            z-index: 20;
+        }
+    }
+    &_top-line{
+        padding-top: em(115);
+        &:before{
+            content:"";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-right: 100vw solid #fff;
+            border-bottom: em(75) solid transparent;
+            z-index: 20;
+        }
+    }
+    &__detalis{
+        text-align: center;
+        padding: em(50) 0;
+    }
+    &__more{
+        $font-size: 13;
+        font-size: em($font-size);
+        font-weight: 500;
+        color: #4e9bce;
+        border:2px solid #4e9bce;
+        border-radius: em(5, $font-size);
+        text-decoration: none;
+        padding: em(12, $font-size) em(44, $font-size);
+        line-height: 1.5;
+        transition:background-color .3s, color .3s;
+        &:hover{
+            background-color: #4e9bce;
+            color: #fff;
+        }
+        &_orange{
+            color: #ff6144;
+            border:2px solid #ff6144;
+            &:hover{
+                background-color: #ff6144;
+            }
+        }
+    }
+    &__overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: url(../images/b64/bl-ovr.png);
+    }
+    > .container{
+        position: relative;
+        z-index: 10;
+    }
+    &__video{
+        display: block;
+        img{
+            display: block;
+            width: 100%;
+        }
+        padding-bottom: em(30);
+    }
+}
+
+@media (max-width: $base__size_sm - 1 * 1px) {
+    .b-bgs{
+        &__title{
+            $font-size: 30git ;
+            font-size: em($font-size);
+            padding-bottom: em(120, $font-size);
+        }
+    }
+}

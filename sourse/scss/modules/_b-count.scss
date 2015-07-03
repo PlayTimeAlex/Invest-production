@@ -1,0 +1,22 @@
+.b-count{
+    &__wrap{
+        padding-top: em(250);
+    }
+    $font-size: 13;
+    font-size: em($font-size);
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-bottom: em(50, $font-size);
+    .count{
+        display: block;
+        font-weight: 700;
+        font-size: 2.54em;
+    }
+}
+@media (max-width: $base__size_sm - 1 * 1px) {
+    .b-count{
+        &__wrap{
+            padding-top: em(0);
+        }
+    }
+}

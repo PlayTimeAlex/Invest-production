@@ -1,6 +1,55 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic);
 /*font-family: 'Ubuntu', sans-serif;*/
 
+.icon1{
+    background-image: url(../images/b64/icon1.png);
+    width: 57px;
+}
+.icon2{
+    background-image: url(../images/b64/icon2.png);
+    width: 47px;
+}
+.icon3{
+    background-image: url(../images/b64/icon3.png);
+    width: 51px;
+}
+.icon4{
+    background-image: url(../images/b64/icon4.png);
+    width: 51px;
+}
+.icon5{
+    background-image: url(../images/b64/icon5.png);
+    width: 46px;
+}
+.icon6{
+    background-image: url(../images/b64/icon6.png);
+    width: 65px;
+}
+.icon7{
+    background-image: url(../images/b64/icon7.png);
+    width: 65px;
+}
+.icon8{
+    background-image: url(../images/b64/icon8.png);
+    width: 54px;
+}
+.icon9{
+    background-image: url(../images/b64/icon9.png);
+    width: 65px;
+}
+.icon10{
+    background-image: url(../images/b64/icon10.png);
+    width: 39px;
+}
+.icon11{
+    background-image: url(../images/b64/icon11.png);
+    width: 57px;
+}
+
+
+
+
+
 @import "modules/base";
 @import "modules/_grid";
 @import "modules/reset";
@@ -35,3 +84,8 @@ body{
 @import "modules/b-onas";
 @import "modules/b-map";
 @import "modules/b-contacts";
+@import "modules/b-feature";
+@import "modules/b-bgs";
+@import "modules/b-add-review";
+@import "modules/b-uhheader";
+@import "modules/b-count";

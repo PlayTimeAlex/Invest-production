@@ -4,6 +4,7 @@
     background-size: cover;
     position: relative;
     z-index: 10;
+    overflow: hidden;
     &__title{
         text-align: center;
         font-weight: 700;
@@ -11,6 +12,10 @@
         font-size: em($font-size);
         color: #fff;
         padding-bottom: em(7, $font-size);
+        line-height: 1.2;
+    }
+    &__promo_home &__title{
+        text-align: left;
     }
     &__subtitle{
         $font-size: 13;
@@ -19,8 +24,51 @@
         font-weight: 300;
         color: #fff;
     }
+    &__promo_home &__subtitle{
+        text-align: left;
+    }
     &__promo{
-        padding: em(100) 0; 
+        padding: em(100) 0;
+        position: relative;
+        p{
+            $font-size: 13;
+            font-size: em($font-size);
+            text-align: center;
+            font-weight: 300;
+            color: #fff;
+            padding: em(10, $font-size) 0;
+        }
+        &_home{
+            padding-bottom: em(330);
+        }
+    }
+    &__home-bg{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        background: url(../images/content/header_bottom.png) no-repeat 0 bottom;
+        height: em(256);
+        background-size: 100% 100%;
+        &:after, &:before{
+            content:"";
+            display: block;
+            background-color: #fff;
+            height: 100%;
+            position: absolute;
+            bottom: -4px;
+            left: 100%;
+            width: 2000px;
+        }
+        &:before{
+            left: auto;
+            right: 100%;
+        }
+    }
+    &__promo_home{
+        p{
+            text-align: left;
+        }
     }
     &__top-container{
         overflow: hidden;
@@ -114,10 +162,52 @@
             }
         }
     }
+    &__video{
+        position: relative;
+        height: 0;
+        padding-bottom: 100%;
+        background: url(../images/header-video.jpg) no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        &:before{
+            content:"";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: url(../images/b64/play.png) no-repeat;
+            width: 60px;
+            height: 60px;
+            margin: -30px 0 0 -30px;
+            z-index: 10;
+            opacity: .8;
+        }
+        object, embed, iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .video{
+            display: none;
+        }
+        &_playing{
+            &:before{
+                display: none;
+            }
+            .video{
+                display: block;
+            }
+        }
+    }
 }
 
 @media (max-width: $base__size_sm - 1 * 1px) {
     .b-header{
+        &__title{
+            font-size: em(30);
+        }
         &__login{
             float: none;
             text-align: center;
@@ -126,6 +216,12 @@
                 display: block;
                 width: 50%;
                 float: left;
+            }
+        }
+        &__home-bg{
+            background-color: #fff;
+            &:after, &:before{
+                bottom: 0;
             }
         }
     }
