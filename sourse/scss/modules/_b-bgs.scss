@@ -116,18 +116,24 @@
     }
     &__video{
         display: block;
+        text-decoration: none;
         img{
             display: block;
             width: 100%;
         }
         padding-bottom: em(30);
     }
+    &__video-name{
+        display: block;
+        font-size: em(15);
+        font-weight: 500;
+    }
 }
 
 @media (max-width: $base__size_sm - 1 * 1px) {
     .b-bgs{
         &__title{
-            $font-size: 30git ;
+            $font-size: 30;
             font-size: em($font-size);
             padding-bottom: em(120, $font-size);
         }
