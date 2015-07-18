@@ -1,5 +1,5 @@
 # Invest-production
-http://p145.createme.tk/ (в разработке)
+http://p145.createme.tk/
 
 http://p145.createme.tk/archconference.html
 
