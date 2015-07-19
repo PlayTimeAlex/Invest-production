@@ -829,6 +829,9 @@ body {
 .align-right {
   text-align: right; }
 
+.align-center {
+  text-align: center; }
+
 .b-page__content {
   padding: 4.7em 0 5.6em; }
 
