@@ -6,15 +6,16 @@
         $font-size: 15;
         font-size: em($font-size);
         display: inline-block;
-        font-weight: 500;
+        font-weight: 400;
         padding-right: em(22, $font-size);
         vertical-align: middle;
+        margin: em(5, $font-size) 0;
     }
     &__author-city{
         $font-size: 13;
         font-size: em($font-size);
         display: inline-block;
-        font-weight: 300;
+        font-weight: 400;
         background-color: #f3f0eb;
         border-radius:em(15, $font-size);
         padding: em(6, $font-size) em(14, $font-size);
@@ -23,16 +24,15 @@
     &__content{
         padding: em(14) 0 em(8);
         p{
-            $font-size: 12;
+            $font-size: 14;
             font-size: em($font-size);
-            font-weight: 300;
-            line-height: 1.4;
+            font-weight: 400;
         }
     }
     &__rm{
         $font-size: 13;
         font-size: em($font-size);
-        font-weight: 300;
+        font-weight: 400;
         color: #d30000;
     }
     &__avatar{

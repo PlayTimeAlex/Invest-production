@@ -6,7 +6,7 @@
     &__title{
         $font-size: 13;
         font-size: em($font-size);
-        font-weight: 300;
+        font-weight: 400;
         a{
             color: #db0000;
         }
@@ -14,13 +14,13 @@
     &__time{
         $font-size: 13;
         font-size: em($font-size);
-        font-weight: 300;
+        font-weight: 400;
     }
     &__text{
         color: #156bbb;
         $font-size: 13;
         font-size: em($font-size);
-        font-weight: 300;
+        font-weight: 400;
         padding-top: em(20, $font-size);
     }
     &__play{

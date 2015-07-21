@@ -82,7 +82,7 @@
     &__more{
         $font-size: 13;
         font-size: em($font-size);
-        font-weight: 500;
+        font-weight: 400;
         color: #4e9bce;
         border:2px solid #4e9bce;
         border-radius: em(5, $font-size);
@@ -126,7 +126,7 @@
     &__video-name{
         display: block;
         font-size: em(15);
-        font-weight: 500;
+        font-weight: 400;
     }
 }
 

@@ -16,7 +16,7 @@
         $font-size: 15;
         font-size: em($font-size);
         display: block;
-        font-weight: 500;
+        font-weight: 400;
         padding-right: em(22, $font-size);
         padding-bottom: em(13, $font-size);
     }
@@ -24,7 +24,7 @@
         $font-size: 13;
         font-size: em($font-size);
         display: inline-block;
-        font-weight: 300;
+        font-weight: 400;
         background-color: #f3f0eb;
         border-radius:em(15, $font-size);
         padding: em(6, $font-size) em(14, $font-size);

@@ -1,10 +1,10 @@
 .b-feature{
     &__text{
         p{
-            $font-size: 13;
+            $font-size: 14;
             font-size: em($font-size);
             color: #fff;
-            font-weight: 300;
+            font-weight: 400;
             padding: em(8, $font-size) 0;
         }
     }
