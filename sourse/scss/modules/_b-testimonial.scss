@@ -28,6 +28,9 @@
             font-size: em($font-size);
             font-weight: 400;
         }
+        img{
+            max-width: 100%;
+        }
     }
     &__rm{
         $font-size: 13;
@@ -49,5 +52,13 @@
     }
     &__content-hide{
         display: none;
+    }
+}
+
+@media (max-width: $base__size_sm - 1 * 1px) {
+    .b-testimonial{
+        &__mainp{
+            overflow: visible;
+        }
     }
 }

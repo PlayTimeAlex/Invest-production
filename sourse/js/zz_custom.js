@@ -53,6 +53,11 @@
             return false;
         });
 
+        $('.colorbox-adreview').colorbox({
+            inline: true,
+            maxWidth: "100%",
+            width: 260
+        });
     });
 
     $(window).load(function() {

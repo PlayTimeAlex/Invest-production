@@ -20,7 +20,8 @@
             background-color: darken(#ff6144, 10);
         }
     }
-    &__text{
+    &__text, &__textarea{
+        font-family: $base__font;
         $font-size: 13;
         font-size: em($font-size);
         box-sizing: border-box;
@@ -30,5 +31,15 @@
         color: #333333;
         padding: 0 em(16, $font-size);
         height: em(38, $font-size);
+        &:focus{
+            outline:none;
+            box-shadow: 0 0 3px #ff6144;
+        }
+    }
+    &__textarea{
+        height: auto;
+        resize:none;
+        $font-size: 13;
+        padding: em(8, $font-size) em(16, $font-size);
     }
 }

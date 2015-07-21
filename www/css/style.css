@@ -709,7 +709,7 @@ body {
   line-height: 1.5;
   font-size: 10px;
   color: #000;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   background: #fff;
   font-weight: 400;
   min-width: 320px; }
@@ -737,7 +737,7 @@ strong {
   font-weight: 700; }
 
 .pr-button {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   display: inline-block;
   text-decoration: none;
   color: #e40510;
@@ -853,7 +853,8 @@ body {
           transition: background-color .3s; }
   .b-form__submit:hover {
     background-color: #ff3611; }
-.b-form__text {
+.b-form__text, .b-form__textarea {
+  font-family: 'PT Sans', sans-serif;
   font-size: 1.3em;
   box-sizing: border-box;
   width: 100%;
@@ -862,6 +863,13 @@ body {
   color: #333333;
   padding: 0 1.23077em;
   height: 2.92308em; }
+  .b-form__text:focus, .b-form__textarea:focus {
+    outline: none;
+    box-shadow: 0 0 3px #ff6144; }
+.b-form__textarea {
+  height: auto;
+  resize: none;
+  padding: 0.61538em 1.23077em; }
 
 .b-header {
   background: #434b51;
@@ -1488,6 +1496,8 @@ html[xmlns] .flexslider .slides {
     .b-testimonial__content p {
       font-size: 1.4em;
       font-weight: 400; }
+    .b-testimonial__content img {
+      max-width: 100%; }
   .b-testimonial__rm {
     font-size: 1.3em;
     font-weight: 400;
@@ -1503,6 +1513,10 @@ html[xmlns] .flexslider .slides {
     overflow: hidden; }
   .b-testimonial__content-hide {
     display: none; }
+
+@media (max-width: 767px) {
+  .b-testimonial__mainp {
+    overflow: visible; } }
 
 .b-testimonials {
   padding-right: 1.5em;
@@ -1900,6 +1914,107 @@ html[xmlns] .flexslider .slides {
 @media (max-width: 767px) {
   .b-count__wrap {
     padding-top: 0em; } }
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden; }
+
+#cboxWrapper {
+  max-width: none; }
+
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+#cboxMiddleLeft, #cboxBottomLeft {
+  clear: left; }
+
+#cboxContent {
+  position: relative; }
+
+#cboxLoadedContent {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+
+#cboxTitle {
+  margin: 0; }
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+  cursor: pointer; }
+
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block;
+  max-width: none;
+  -ms-interpolation-mode: bicubic; }
+
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+#colorbox, #cboxContent, #cboxLoadedContent {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; }
+
+#colorbox:focus {
+  outline: none; }
+
+#cboxOverlay {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#cboxClose {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 0;
+  height: 0;
+  padding: 26px 26px 0 0;
+  overflow: hidden;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVFMUM1NEU3MkZFQjExRTVCNkNERkU1QzFDMjdFQjZCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVFMUM1NEU4MkZFQjExRTVCNkNERkU1QzFDMjdFQjZCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUUxQzU0RTUyRkVCMTFFNUI2Q0RGRTVDMUMyN0VCNkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUUxQzU0RTYyRkVCMTFFNUI2Q0RGRTVDMUMyN0VCNkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5WxX+VAAAA4UlEQVR42rTW7Q0CIQwGYGycw8gM/schPAdgP91BBnAGjYtoazAhHB+tlCbv5cIlfcIBl9t47w3WDvMyc+rbG/BiMXeMm4C42NsS9MAsmKsy5mLPMxkQB4MyliI3GoDkoRa2QnJIAysiJWgEqyI16B+sibQgCdZFehAHYyEcqIWxEaotc6FT7BTH2IgEyjEjQbivLq135V4VSteEZnbBHLWhfOGDFIOBwyjCYPDEszFgIEtnd7EwYCBBsPWrGCggLAyUkC4GikgTA2WkihG0V0ZKmKWP6hNzmPQDGX69PwIMADHXYKsOrxXxAAAAAElFTkSuQmCC) no-repeat 50%;
+  border: 0; }
+
+.b-popup {
+  padding: 2em 2.7em;
+  background-color: #fff;
+  width: 26em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5); }
+  .b-popup__title {
+    font-size: 2.3em;
+    font-weight: 700;
+    padding-bottom: 0.21739em;
+    position: relative;
+    margin-bottom: 0.69565em; }
+    .b-popup__title:after {
+      content: "";
+      display: block;
+      height: 3px;
+      background-color: #ff6144;
+      position: absolute;
+      width: 39px;
+      left: 0;
+      bottom: 0; }
 
 
 /*grid*/

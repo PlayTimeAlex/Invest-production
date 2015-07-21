@@ -709,7 +709,7 @@ body {
   line-height: 1.5;
   font-size: 10px;
   color: #000;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   background: #fff;
   font-weight: 400;
   min-width: 320px; }
@@ -737,7 +737,7 @@ strong {
   font-weight: 700; }
 
 .pr-button {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   display: inline-block;
   text-decoration: none;
   color: #e40510;
@@ -851,7 +851,8 @@ body {
   transition: background-color .3s; }
   .b-form__submit:hover {
     background-color: #ff3611; }
-.b-form__text {
+.b-form__text, .b-form__textarea {
+  font-family: 'PT Sans', sans-serif;
   font-size: 1.3em;
   box-sizing: border-box;
   width: 100%;
@@ -860,6 +861,13 @@ body {
   color: #333333;
   padding: 0 1.23077em;
   height: 2.92308em; }
+  .b-form__text:focus, .b-form__textarea:focus {
+    outline: none;
+    box-shadow: 0 0 3px #ff6144; }
+.b-form__textarea {
+  height: auto;
+  resize: none;
+  padding: 0.61538em 1.23077em; }
 
 .b-header {
   background: #434b51;
@@ -1485,6 +1493,8 @@ html[xmlns] .flexslider .slides {
     .b-testimonial__content p {
       font-size: 1.4em;
       font-weight: 400; }
+    .b-testimonial__content img {
+      max-width: 100%; }
   .b-testimonial__rm {
     font-size: 1.3em;
     font-weight: 400;
@@ -1500,6 +1510,10 @@ html[xmlns] .flexslider .slides {
     overflow: hidden; }
   .b-testimonial__content-hide {
     display: none; }
+
+@media (max-width: 767px) {
+  .b-testimonial__mainp {
+    overflow: visible; } }
 
 .b-testimonials {
   padding-right: 1.5em;
@@ -1896,3 +1910,104 @@ html[xmlns] .flexslider .slides {
 @media (max-width: 767px) {
   .b-count__wrap {
     padding-top: 0em; } }
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden; }
+
+#cboxWrapper {
+  max-width: none; }
+
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+#cboxMiddleLeft, #cboxBottomLeft {
+  clear: left; }
+
+#cboxContent {
+  position: relative; }
+
+#cboxLoadedContent {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+
+#cboxTitle {
+  margin: 0; }
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+  cursor: pointer; }
+
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block;
+  max-width: none;
+  -ms-interpolation-mode: bicubic; }
+
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+#colorbox, #cboxContent, #cboxLoadedContent {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; }
+
+#colorbox:focus {
+  outline: none; }
+
+#cboxOverlay {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#cboxClose {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 0;
+  height: 0;
+  padding: 26px 26px 0 0;
+  overflow: hidden;
+  background: url(../images/b64/close.png) no-repeat 50%;
+  border: 0; }
+
+.b-popup {
+  padding: 2em 2.7em;
+  background-color: #fff;
+  width: 26em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5); }
+  .b-popup__title {
+    font-size: 2.3em;
+    font-weight: 700;
+    padding-bottom: 0.21739em;
+    position: relative;
+    margin-bottom: 0.69565em; }
+    .b-popup__title:after {
+      content: "";
+      display: block;
+      height: 3px;
+      background-color: #ff6144;
+      position: absolute;
+      width: 39px;
+      left: 0;
+      bottom: 0; }

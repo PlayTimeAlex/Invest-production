@@ -297,7 +297,7 @@
                     <p>Мы не пишем выдуманные или только позитивные отзывы  а даем возможность написать свое мнение о сотрудничестве каждому желающему.</p>
                 </div>
                 <div class="b-add-review">
-                    <p><a href="" class="b-add-review__button">Добавить отзыв</a></p>
+                    <p><a href="#add_review" class="b-add-review__button colorbox-adreview">Добавить отзыв</a></p>
                     <div class="b-add-review__note">*. Отзыв будет опубликован после<br/>проверки модератором на рекламу</div>
                 </div>
             </div>
@@ -420,5 +420,28 @@
         </div>
     </div>
 </div>
+        <div style="display:none;">
+            <div id="add_review" class="b-popup">
+                <h2 class="b-popup__title">Оставить отзыв</h2>
+
+                <form class="b-form" action="/">
+                    <div class="b-form__el">
+                        <input class="b-form__text" type="text" placeholder="Имя"/>
+                    </div>
+                    <div class="b-form__el">
+                        <input class="b-form__text" type="email" placeholder="E-mail"/>
+                    </div>
+                    <div class="b-form__el">
+                        <input class="b-form__text" type="text" placeholder="Город"/>
+                    </div>
+                    <div class="b-form__el">
+                        <textarea class="b-form__textarea" placeholder="Текст" rows="5"></textarea>
+                    </div>
+                    <div class="b-form__el">
+                        <button type="submit" class="b-form__submit">Добавить отзыв</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
