@@ -18,3 +18,5 @@ http://p145.createme.tk/onas.html
 http://p145.createme.tk/ozivi.html
 
 http://p145.createme.tk/video-testimonial.html
+
+http://p145.createme.tk/thanks.html
