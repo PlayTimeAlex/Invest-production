@@ -1017,9 +1017,12 @@ body {
     position: relative;
     height: 0;
     padding-bottom: 100%;
-    background: url(../images/header-video.jpg) no-repeat;
-    background-size: 100% 100%;
-    cursor: pointer; }
+    background: #000;
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 8px solid #c0c0c0; }
     .b-header__video:before {
       content: "";
       display: block;
