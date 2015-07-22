@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic);
 /*font-family: 'Ubuntu', sans-serif;*/
 .icon1 {
   background-image: url(../images/b64/icon1.png);
@@ -709,7 +709,7 @@ body {
   line-height: 1.5;
   font-size: 10px;
   color: #000;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   background: #fff;
   font-weight: 400;
   min-width: 320px; }
@@ -737,7 +737,7 @@ strong {
   font-weight: 700; }
 
 .pr-button {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   display: inline-block;
   text-decoration: none;
   color: #e40510;
@@ -852,7 +852,7 @@ body {
   .b-form__submit:hover {
     background-color: #ff3611; }
 .b-form__text, .b-form__textarea {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.3em;
   box-sizing: border-box;
   width: 100%;

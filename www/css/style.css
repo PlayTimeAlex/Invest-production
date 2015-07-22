@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic);
 /*font-family: 'Ubuntu', sans-serif;*/
 .icon1 {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNjc0ODU5MjE4NTExRTVBODRDOEFEOEI0NDFCMThCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJFNjc0ODVBMjE4NTExRTVBODRDOEFEOEI0NDFCMThCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkU2NzQ4NTcyMTg1MTFFNUE4NEM4QUQ4QjQ0MUIxOEIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkU2NzQ4NTgyMTg1MTFFNUE4NEM4QUQ4QjQ0MUIxOEIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6+LebqAAAFuUlEQVR42txaa2wVRRSePqxoqRFKK6XaYhX7kkShEhVMCNVEQRPEgDEoP9S2gKD+6Q+LMcYIP4wRBJ8/NDEtCYiKogETEiE+CC3E+IIiBS31FWwJVVqLNVK/w/02Waez9+7eu7Pcy0m+7O7szJn5dubMnDmzWSMjIyqeTFvToUKSMcAzwGxgN/AUcFpZli9bZqhcFZ08ATTz/gbgL+DpKCrOjohgKbBSS3uU6ecNyRXAOC1tHNPPC5KTgAaPdw18n/EkpbcKPd4VRtGbtkmWAI0J8jQyX8aSNPXiZ4befCRTSU4Elmpp3wH38OqWZcyfcSSlF8draRuAXl7dMt6mbWZH2IuHgDbet/HZLUtt9aYtkssNtriOXo7idZ3BNpdnCskioMnQi61aWquhN5tYPu1JPgwUa2lrXb2oXL25VksrZvm0Jllk8FG/d9miLm1875aVYfdm2CQfMizspl6M15sl1BOapLrVuohf/QqgEnjMhy0qg20+DlS50kTP7+zln7jsDNkkeTHXsXKgDKgGriKxUtrRWI+yL8bpRXdvSr5XtSXoDd4PkPAvJHwU6AR6gG7gZKI6spzIwLQ1HU6jK4ApJFJGTAAKAn5AacS1wCkfeQvoBZUFrEN097GuHn6ALuAH56NIZCDr+tXtk/HwGjAzTo8kI8uo1680BcyfSGQE7JHZOqekvuEV3MwH8lJUKkPmNwmrAC9ow89XOAY4QTvPpiml0qY8jsZiUXRZgIJ/cxJw7MEZGvL8Ixs5kGSjRujTbuCIEg/oSg5hx4Qmu8xnjN/tXi6N/hbgAkOGz4GdJCRGf4wkTym7MkAc87DfIk6El/ND3AbMMuT9B1h/duLBpLMYD28ahsde4A6gX6WvXArsAG7U0oeBBzHxbDzrDMgNLkvU6DioFPyUwyUdpYLt0wmeJp+N//N4QHQzLosNa85U4EPaRDrJFLZrqmECvB/YbHTrQPQ9XO4DBrWCNVRYlSYEq9ieGi19kO1/N67vCqLbcFlomCXFbfsYqDvHBOvYjkrDZCXt3ubLQQdRMeQFwB/aq3Ia+cxzRPBm1l+upf/J9u4ItAsBUVk67qZv6JYJHCqzIyYo9X3E+t1yks7MzqS2WiC6C5e7uMi7RUL8HwD1ERG8lfXpRw0n2L5dqe4nv+BaqS/MlwDvA7dbJij6t7I+t0h75rJ9oWya95HoYS1d3K93DOtUWDKD+vWNw2GS93V4GiQyIHu4O4GDWnq+jbiMa2eSr6UdZDsO2Qp/dNHI+7T0IUskdb19rL/Ldoxn0ODjfmuJ5DeG7dNgFIGsSsMk0GmJZKdhsquMgmStwdPotkSy2+B51UZBUneIfwWOWyJ5nPrj1W+FZLVhOh+2RHLYsGxV2yY5liEItxwIqOPCgPkPGPznfJskSw0xIb8z603cAslk8jaf/YiufyLDHtZIVmjLhwSfjiQoMx3YpGLH6AsYk1nI5018H0+OsB73MlJhk6Ru9P1xZlbZ2L6uYrHPe4Ec7X0O0/cwX1WcGbY/lcknO8VJxzmn0Ht7Pf3KRpU4dprHfB0sp/dSL+tJevIJSlJfo+RA5gzv5TTqOWC/ih2/mY4VZNh9pQ0/RwpYbj/1OKdjZ9To471aWyQl9KefVbTTC1nFxjUb9nyOyK59DsMXc7x28SzfTH2rqL9dy1PG9oROUhTr/wHMZ2OeVd6/j8l+bx73fruBf3mdy3Sv/eAk6t3HetxSqAIcDgUhKSFA/ahvlvIOVQr5RSoWnd/ukWc73y9ifpNco0ZHx3NVgBBpEJJ+Z7SvgQcY7NriYX+6nW5h/iUsH2Z7ApGs8bGereAi35aEqyf5W1le9BwNOAmGNlxN0sOJQv5GfjmEDfQQ9dRRb49HvqttkNxrWL+epMfyvAr/UKifeqeznt4E7fGUID9GtNBLuQ74BHgJ+FnZFwl5rAbeUrG/Ketpty1+FfwnwABGrEp3RffFtgAAAABJRU5ErkJggg==);
@@ -709,7 +709,7 @@ body {
   line-height: 1.5;
   font-size: 10px;
   color: #000;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   background: #fff;
   font-weight: 400;
   min-width: 320px; }
@@ -737,7 +737,7 @@ strong {
   font-weight: 700; }
 
 .pr-button {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   display: inline-block;
   text-decoration: none;
   color: #e40510;
@@ -854,7 +854,7 @@ body {
   .b-form__submit:hover {
     background-color: #ff3611; }
 .b-form__text, .b-form__textarea {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.3em;
   box-sizing: border-box;
   width: 100%;
