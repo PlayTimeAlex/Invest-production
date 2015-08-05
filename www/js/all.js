@@ -2514,7 +2514,9 @@
             $(this).html(mainVideo);
             return false;
         });
-
+		$('.b-header__video').click();
+		
+		
         $('.colorbox-adreview').colorbox({
             inline: true,
             maxWidth: "100%",
