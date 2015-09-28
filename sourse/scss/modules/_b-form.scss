@@ -19,6 +19,11 @@
         &:hover{
             background-color: darken(#ff6144, 10);
         }
+        &_inline{
+            display: inline-block;
+            width: auto;
+            padding: em(10, $font-size) em(50, $font-size);
+        }
     }
     &__text, &__textarea{
         font-family: $base__font;
@@ -31,9 +36,11 @@
         color: #333333;
         padding: 0 em(16, $font-size);
         height: em(38, $font-size);
+        position: relative;
         &:focus{
             outline:none;
             box-shadow: 0 0 3px #ff6144;
+            z-index: 10;
         }
     }
     &__textarea{
@@ -41,5 +48,47 @@
         resize:none;
         $font-size: 13;
         padding: em(8, $font-size) em(16, $font-size);
+    }
+    &__right-area{
+        margin-left: 100px;
+    }
+    &__left-label{
+        width: 100px;
+        float: left;
+        $font-size: 13;
+        font-size: em($font-size);
+        font-weight: 500;
+        padding: em(8, $font-size) 0 0;
+        display: block;
+    }
+    &__checkbox{
+        $font-size: 13;
+        font-size: em($font-size);
+        a{
+            color: #ff0000;
+        }
+        input{
+            display: inline-block;
+            margin-right: em(18, $font-size);
+            vertical-align: middle;
+        }
+    }
+    &__captcha{
+        padding-bottom: em(20);
+    }
+    &__captcha-image{
+        display: block;
+        width: 100%;
+    }
+    &__captcha-title{
+        $font-size: 13;
+        font-size: em($font-size);
+        font-weight: 500;
+        padding-bottom: em(10, $font-size);
+    }
+    &__captcha-reflesh{
+        color: #ff0000;
+        $font-size: 13;
+        font-size: em($font-size);
     }
 }
